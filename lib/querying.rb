@@ -37,6 +37,8 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name
-  FROM character_books
+  FROM characters
+  JOIN books
+  ON books.series_id = characters.series_id
   "
 end
