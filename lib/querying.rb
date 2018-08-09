@@ -24,6 +24,7 @@ def select_name_and_series_subgenres_of_authors
   "SELECT authors.name, subgenre_id
   FROM authors
   JOIN series
+
    "
 end
 
